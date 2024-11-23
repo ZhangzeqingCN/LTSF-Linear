@@ -72,7 +72,7 @@ def get_topk(epoch, batch_size):
 
 def train_epoch(model, training_data, optimizer, opt, epoch):
     """ Epoch operation in training phase. """
-    model.train()
+    model._train()
 
     total_likelihood = 0
     total_mse = 0

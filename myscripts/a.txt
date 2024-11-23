@@ -1,0 +1,1 @@
+--model "Linear" --is_training 1 --root_path ./dataset/ --data_path "electricity.csv" --model_id "debug_336_96" --data custom --features M --seq_len 336 --pred_len 96 --enc_in 321 --des 'Exp' --itr 1 --batch_size 16 --learning_rate 0.001 --num_workers 0 --train_epoch 50 --individual

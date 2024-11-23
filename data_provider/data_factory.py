@@ -1,5 +1,10 @@
-from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Custom, Dataset_Pred
+from data_provider.data_loader import Dataset_ETT_hour, Dataset_ETT_minute, Dataset_Pred
 from torch.utils.data import DataLoader
+use_periods_segments = False
+if use_periods_segments:
+    from data_provider.data_loader import Dataset_Custom_for_PeriodsSegments as Dataset_Custom
+else:
+    from data_provider.data_loader import Dataset_Custom
 
 data_dict = {
     'ETTh1': Dataset_ETT_hour,

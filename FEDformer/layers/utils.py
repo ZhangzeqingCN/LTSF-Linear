@@ -197,7 +197,7 @@ def train(model, train_loader, optimizer, epoch, device, verbose = 0,
     if lossFn is None:
         lossFn = nn.MSELoss()
 
-    model.train()
+    model._train()
     
     total_loss = 0.
 

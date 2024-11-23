@@ -149,7 +149,7 @@ def dataset_parameters(args, dataset):
 def train_epoch(model, train_dataset, training_loader, optimizer, opt, epoch):
     """ Epoch operation in training phase. """
 
-    model.train()
+    model._train()
     total_loss = 0
     total_pred_number = 0
     warm = False
